@@ -37,7 +37,6 @@ function setup() {
 	World.add(world, packageBody);
 
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
-	World.add(world, packageBody);
  	World.add(world, ground);
 }
 
@@ -49,6 +48,7 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y  
   //box1.display();
+	drawSprites();
 }
 
 function keyPressed() {
